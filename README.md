@@ -11,7 +11,7 @@ This project should be built using CMake methods.
 It is not recommended to run `cmake` inside the source directory.  Instead, it is better to create a dedicated `build` directory:
 
 ```Bash
-$ git clone  https://github.com/AaronMHurst/attenuation_integration.git
+$ git clone https://github.com/AaronMHurst/attenuation_integration.git
 $ cd attenuation_integration
 $ mkdir build
 $ cmake ../
@@ -77,7 +77,7 @@ The `gamma_attn_water.mac` script contains the following set of responses:
 | Number of Elements in compound? | `2` |
 | Chemical symbol for Absorber No. 1 ? | `H` |
 | Number of atoms belonging to H (i.e. stoichiometry) ? | `2` |
-| Use adopted elemental absorption cross section from Mughabghab's<br /> &nbsp;&nbsp; Atlas of Neutron Resonances (Ed. 2006)?<br /> &nbsp;&nbsp; 1 - Yes<br /> &nbsp;&nbsp; 2 - No | `1` |
+| Use adopted elemental absorption cross section from Mughabghab's<br /> Atlas of Neutron Resonances (Ed. 2006)?<br /> &nbsp;&nbsp; 1 - Yes<br /> &nbsp;&nbsp; 2 - No | `1` |
 | Chemical symbol for Absorber No. 2 ? | `O` |
 | Number of atoms belonging to O (i.e. stoichiometry) ? | `1` |
 | Use adopted elemental absorption cross section from Mughabghab's<br /> Atlas of Neutron Resonances (Ed. 2006)?<br /> &nbsp;&nbsp; 1 - Yes<br /> &nbsp;&nbsp; 2 - No | `1` |
@@ -86,6 +86,6 @@ The `gamma_attn_water.mac` script contains the following set of responses:
 <a id="1">[1]</a>
 A.M. Hurst, N.C. Summers, L. Szentmiklosi, R.B. Firestone, M.S. Basunia, J.E. Escher, B.W. Sleaford,
 *Determination of the effective sample thickness via radiative capture*,
-Nucl. Instrum. Methods Phys. Res. Sect. B 362, 38 (2015);
+Nucl. Instrum. Methods Phys. Res. Sect. B **362**, 38 (2015);
 https://www.doi.org/10.1016/j.nimb.2015.09.003
 
