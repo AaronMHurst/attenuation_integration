@@ -2,8 +2,8 @@
 #include <cstdlib>
 #include <iostream>
 
-#include "constants.H"
-#include "initlib.H"
+#include "constants.hpp"
+#include "initlib.hpp"
 
 Initialize::Initialize(int num_elements, int num_atoms, double rho_compound, double temperature, double thickness, double user_cs, double user_err_cs, double user_A)
 {

@@ -1,5 +1,5 @@
-#ifndef PROTOLIB_H
-#define PROTOLIB_H
+#ifndef PROTOLIB_HPP
+#define PROTOLIB_HPP
 
 class Prototypes{
 public:

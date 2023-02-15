@@ -1,5 +1,5 @@
-#ifndef INITLIB_H
-#define INITLIB_H
+#ifndef INITLIB_HPP
+#define INITLIB_HPP
 
 class Initialize{
 public:

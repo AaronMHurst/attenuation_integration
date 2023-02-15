@@ -1,5 +1,5 @@
-#ifndef INPUTLIB_H
-#define INPUTLIB_H
+#ifndef INPUTLIB_HPP
+#define INPUTLIB_HPP
 
 class record{
 public:

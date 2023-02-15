@@ -3,8 +3,8 @@
 #include <iomanip>
 #include <iostream>
 
-#include "constants.H"
-#include "protolib.H"
+#include "constants.hpp"
+#include "protolib.hpp"
 
 double Prototypes::ReturnValue()
 {

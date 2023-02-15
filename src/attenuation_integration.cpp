@@ -38,10 +38,10 @@
 #include <string>
 #include <vector>
 
-#include "constants.H"
-#include "initlib.H"
-#include "inputlib.H"
-#include "protolib.H"
+#include "constants.hpp"
+#include "initlib.hpp"
+#include "inputlib.hpp"
+#include "protolib.hpp"
 
 using namespace std;
 
