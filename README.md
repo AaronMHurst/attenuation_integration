@@ -1,6 +1,6 @@
 # Sample-thickness attenuation integration
 
-This project is based on the method described in Ref. [[1]](#1) for calculation of the attenuation integrated over an assumed sample thickness for elemental material or a compound sample of known stoichiometry and density.  If you use this software please cite this reference as shown below.  The algorithm is implemented in C++.  For more details please refer to the paper [[1]](#1) or visit [this website](https://nucleardata.berkeley.edu/research/thermal_capture.html) and scroll down to the *Methodology Development* section.
+This project is based on the method described in Ref. [[1]](#1) for the calculation of the attenuation integrated over an assumed sample thickness for elemental materials or compound samples of known stoichiometry and density irradiated in thermal (or cold) neutron-capture reactions.  The algorithm is implemented in C++.  If you use this software please cite this reference as shown below.  For more details please refer to the paper [[1]](#1) or visit [this website](https://nucleardata.berkeley.edu/research/thermal_capture.html) and scroll down to the *Methodology Development* section.
 
 # Building
 
@@ -25,7 +25,7 @@ Alternatively, the last four commands above can be omitted if the shell script `
 $ git clone  https://github.com/AaronMHurst/attenuation_integration.git
 $ cd attenuation_integration
 $ sh project-build.sh
-'''
+```
 
 # Running the program
 
@@ -49,12 +49,12 @@ The `gamma_attn_tungsten.mac` script contains the following set of responses:
 | Prompt | Response |
 | --- | --- |
 | Calculate attenuation assuming coefficients for:<br /> &nbsp;&nbsp; 1 - gamma-ray attenuation only<br /> &nbsp;&nbsp; 2 - gamma-ray and neutron attenuation combined | `1` |
-| Sample in [mm] or [cm] ?<br /> &npsp;&nbsp; 1 - [mm]<br /> &nbsp;&nbsp; 2 - [cm] | `1` |
+| Sample in [mm] or [cm] ?<br /> &nbsp;&nbsp; 1 - [mm]<br /> &nbsp;&nbsp; 2 - [cm] | `1` |
 | Give sample thickness [mm]: | `0.08` |
 | Temperature of neutron beam [K] ? | `293` |
 | Natural Element (1) or Compound Sample (2) ? | `1` |
 | Chemical symbol for absorber? | `W` |
-| Use adopted elemental absorption cross section from Mughabghab's<br /> &nbsp;&nbsp; Atlas of Neutron Resonances (Ed. 2006)?<br /> &nbsp;&nbsp; 1 - Yes<br /> &nbsp;&nbsp; 2 - No | `1` |
+| Use adopted elemental absorption cross section from Mughabghab's<br /> Atlas of Neutron Resonances (Ed. 2006)?<br /> &nbsp;&nbsp; 1 - Yes<br /> &nbsp;&nbsp; 2 - No | `1` |
 
 
 ```Bash
@@ -69,7 +69,7 @@ The `gamma_attn_water.mac` script contains the following set of responses:
 | Prompt | Response |
 | --- | --- |
 | Calculate attenuation assuming coefficients for:<br /> &nbsp;&nbsp; 1 - gamma-ray attenuation only<br /> &nbsp;&nbsp; 2 - gamma-ray and neutron attenuation combined | `1` |
-| Sample in [mm] or [cm] ?<br /> &npsp;&nbsp; 1 - [mm]<br /> &nbsp;&nbsp; 2 - [cm] | `2` |
+| Sample in [mm] or [cm] ?<br /> &nbsp;&nbsp; 1 - [mm]<br /> &nbsp;&nbsp; 2 - [cm] | `2` |
 | Give sample thickness [cm]: | `2.5` |
 | Temperature of neutron beam [K] ? | `293` |
 | Natural Element (1) or Compound Sample (2) ? | `2` |
@@ -79,13 +79,13 @@ The `gamma_attn_water.mac` script contains the following set of responses:
 | Number of atoms belonging to H (i.e. stoichiometry) ? | `2` |
 | Use adopted elemental absorption cross section from Mughabghab's<br /> &nbsp;&nbsp; Atlas of Neutron Resonances (Ed. 2006)?<br /> &nbsp;&nbsp; 1 - Yes<br /> &nbsp;&nbsp; 2 - No | `1` |
 | Chemical symbol for Absorber No. 2 ? | `O` |
-| Number of atoms belonging to H (i.e. stoichiometry) ? | `1` |
-| Use adopted elemental absorption cross section from Mughabghab's<br /> &nbsp;&nbsp; Atlas of Neutron Resonances (Ed. 2006)?<br /> &nbsp;&nbsp; 1 - Yes<br /> &nbsp;&nbsp; 2 - No | `1` |
+| Number of atoms belonging to O (i.e. stoichiometry) ? | `1` |
+| Use adopted elemental absorption cross section from Mughabghab's<br /> Atlas of Neutron Resonances (Ed. 2006)?<br /> &nbsp;&nbsp; 1 - Yes<br /> &nbsp;&nbsp; 2 - No | `1` |
 
 ## References
 <a id="1">[1]</a>
-A.M. Hurst, N.C. Summers, L. Szentmiklosi, R.B. Firestone, M.S. Basunia, J.E. Escher, B.W. Sleaford
-Determination of the effective sample thickness via radiative capture
-Nucl. Instrum. Methods Phys. Res. Sect. B 362, 38 (2015).
+A.M. Hurst, N.C. Summers, L. Szentmiklosi, R.B. Firestone, M.S. Basunia, J.E. Escher, B.W. Sleaford,
+*Determination of the effective sample thickness via radiative capture*,
+Nucl. Instrum. Methods Phys. Res. Sect. B 362, 38 (2015);
 https://www.doi.org/10.1016/j.nimb.2015.09.003
 
